@@ -10,10 +10,19 @@ class Tamagotchi {
         this.health=10
     }
     cry() {
-        this.foodInTummy -= 1
-        console.log(`WAHH! ${this.name} ${this.creatureType} has ${this.foodInTummy} food in the tummy.`)
+        this.foodInTummy --
+        console.log(`WAHH! ${this.name} has ${this.foodInTummy} food in the tummy.`)
+    }
+    puke() {
+        this.foodInTummy --
+        console.log(`BLEHH! ${this.name} has ${this.foodInTummy} food in the tummy.`)
+    }
+    yawn() {
+        this.restedness -- 
+        console.log(`${this.name}'s current restedness is ${this.restedness}.`)
     }
 }
+
 
 let Bob = new Tamagotchi('Bob', 'Dragon')
 let Bobo = new Tamagotchi('Bobo', 'Whale')
@@ -22,8 +31,10 @@ let Bomba = new Tamagotchi('Bomba', 'Pig')
 
 Bob.cry()
 Bobo.cry()
+Bobo.puke()
 Bibi.cry()
 Bomba.cry()
+Bomba.yawn()
 //create new Tamagotchis
 
 
