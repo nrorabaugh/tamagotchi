@@ -14,6 +14,11 @@ class Tamagotchi {
     }
 }
 
+let Bob = new Tamagotchi('Bob')
+let Bobo = new Tamagotchi('Bobo')
+
+Bob.cry()
+Bobo.cry()
 //create new Tamagotchis
 
 
