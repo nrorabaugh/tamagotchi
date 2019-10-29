@@ -16,6 +16,4 @@ var player = {
   }
 }; 
 
-player.knockOutTamagotchi(Bomba)
-player.feedTamagotchi(Bobo)
 //end player
